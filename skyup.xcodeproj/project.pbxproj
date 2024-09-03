@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		577507AD2C87280600051AD4 /* skyupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507AC2C87280600051AD4 /* skyupApp.swift */; };
+		577507AF2C87280600051AD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507AE2C87280600051AD4 /* ContentView.swift */; };
+		577507B12C87280700051AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577507B02C87280700051AD4 /* Assets.xcassets */; };
+		577507B42C87280700051AD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577507B32C87280700051AD4 /* Preview Assets.xcassets */; };
+		577507BE2C87280700051AD4 /* skyupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507BD2C87280700051AD4 /* skyupTests.swift */; };
+		577507C82C87280700051AD4 /* skyupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507C72C87280700051AD4 /* skyupUITests.swift */; };
+		577507CA2C87280700051AD4 /* skyupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507C92C87280700051AD4 /* skyupUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		577507BA2C87280700051AD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 577507A12C87280600051AD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 577507A82C87280600051AD4;
+			remoteInfo = skyup;
+		};
+		577507C42C87280700051AD4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 577507A12C87280600051AD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 577507A82C87280600051AD4;
+			remoteInfo = skyup;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		577507A92C87280600051AD4 /* skyup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = skyup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		577507AC2C87280600051AD4 /* skyupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyupApp.swift; sourceTree = "<group>"; };
+		577507AE2C87280600051AD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		577507B02C87280700051AD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		577507B32C87280700051AD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		577507B92C87280700051AD4 /* skyupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skyupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		577507BD2C87280700051AD4 /* skyupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyupTests.swift; sourceTree = "<group>"; };
+		577507C32C87280700051AD4 /* skyupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skyupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		577507C72C87280700051AD4 /* skyupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyupUITests.swift; sourceTree = "<group>"; };
+		577507C92C87280700051AD4 /* skyupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyupUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		577507A62C87280600051AD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577507B62C87280700051AD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577507C02C87280700051AD4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		577507A02C87280600051AD4 = {
+			isa = PBXGroup;
+			children = (
+				577507AB2C87280600051AD4 /* skyup */,
+				577507BC2C87280700051AD4 /* skyupTests */,
+				577507C62C87280700051AD4 /* skyupUITests */,
+				577507AA2C87280600051AD4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		577507AA2C87280600051AD4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				577507A92C87280600051AD4 /* skyup.app */,
+				577507B92C87280700051AD4 /* skyupTests.xctest */,
+				577507C32C87280700051AD4 /* skyupUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		577507AB2C87280600051AD4 /* skyup */ = {
+			isa = PBXGroup;
+			children = (
+				577507AC2C87280600051AD4 /* skyupApp.swift */,
+				577507AE2C87280600051AD4 /* ContentView.swift */,
+				577507B02C87280700051AD4 /* Assets.xcassets */,
+				577507B22C87280700051AD4 /* Preview Content */,
+			);
+			path = skyup;
+			sourceTree = "<group>";
+		};
+		577507B22C87280700051AD4 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				577507B32C87280700051AD4 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		577507BC2C87280700051AD4 /* skyupTests */ = {
+			isa = PBXGroup;
+			children = (
+				577507BD2C87280700051AD4 /* skyupTests.swift */,
+			);
+			path = skyupTests;
+			sourceTree = "<group>";
+		};
+		577507C62C87280700051AD4 /* skyupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				577507C72C87280700051AD4 /* skyupUITests.swift */,
+				577507C92C87280700051AD4 /* skyupUITestsLaunchTests.swift */,
+			);
+			path = skyupUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		577507A82C87280600051AD4 /* skyup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577507CD2C87280700051AD4 /* Build configuration list for PBXNativeTarget "skyup" */;
+			buildPhases = (
+				577507A52C87280600051AD4 /* Sources */,
+				577507A62C87280600051AD4 /* Frameworks */,
+				577507A72C87280600051AD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = skyup;
+			productName = skyup;
+			productReference = 577507A92C87280600051AD4 /* skyup.app */;
+			productType = "com.apple.product-type.application";
+		};
+		577507B82C87280700051AD4 /* skyupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577507D02C87280700051AD4 /* Build configuration list for PBXNativeTarget "skyupTests" */;
+			buildPhases = (
+				577507B52C87280700051AD4 /* Sources */,
+				577507B62C87280700051AD4 /* Frameworks */,
+				577507B72C87280700051AD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				577507BB2C87280700051AD4 /* PBXTargetDependency */,
+			);
+			name = skyupTests;
+			productName = skyupTests;
+			productReference = 577507B92C87280700051AD4 /* skyupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		577507C22C87280700051AD4 /* skyupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 577507D32C87280700051AD4 /* Build configuration list for PBXNativeTarget "skyupUITests" */;
+			buildPhases = (
+				577507BF2C87280700051AD4 /* Sources */,
+				577507C02C87280700051AD4 /* Frameworks */,
+				577507C12C87280700051AD4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				577507C52C87280700051AD4 /* PBXTargetDependency */,
+			);
+			name = skyupUITests;
+			productName = skyupUITests;
+			productReference = 577507C32C87280700051AD4 /* skyupUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		577507A12C87280600051AD4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					577507A82C87280600051AD4 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					577507B82C87280700051AD4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 577507A82C87280600051AD4;
+					};
+					577507C22C87280700051AD4 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 577507A82C87280600051AD4;
+					};
+				};
+			};
+			buildConfigurationList = 577507A42C87280600051AD4 /* Build configuration list for PBXProject "skyup" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 577507A02C87280600051AD4;
+			productRefGroup = 577507AA2C87280600051AD4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				577507A82C87280600051AD4 /* skyup */,
+				577507B82C87280700051AD4 /* skyupTests */,
+				577507C22C87280700051AD4 /* skyupUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		577507A72C87280600051AD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577507B42C87280700051AD4 /* Preview Assets.xcassets in Resources */,
+				577507B12C87280700051AD4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577507B72C87280700051AD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577507C12C87280700051AD4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		577507A52C87280600051AD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577507AF2C87280600051AD4 /* ContentView.swift in Sources */,
+				577507AD2C87280600051AD4 /* skyupApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577507B52C87280700051AD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577507BE2C87280700051AD4 /* skyupTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		577507BF2C87280700051AD4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				577507C82C87280700051AD4 /* skyupUITests.swift in Sources */,
+				577507CA2C87280700051AD4 /* skyupUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		577507BB2C87280700051AD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 577507A82C87280600051AD4 /* skyup */;
+			targetProxy = 577507BA2C87280700051AD4 /* PBXContainerItemProxy */;
+		};
+		577507C52C87280700051AD4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 577507A82C87280600051AD4 /* skyup */;
+			targetProxy = 577507C42C87280700051AD4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		577507CB2C87280700051AD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		577507CC2C87280700051AD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		577507CE2C87280700051AD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"skyup/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.skyup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		577507CF2C87280700051AD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"skyup/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.skyup;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		577507D12C87280700051AD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.skyupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skyup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skyup";
+			};
+			name = Debug;
+		};
+		577507D22C87280700051AD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.skyupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/skyup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/skyup";
+			};
+			name = Release;
+		};
+		577507D42C87280700051AD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.skyupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = skyup;
+			};
+			name = Debug;
+		};
+		577507D52C87280700051AD4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.skyupUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = skyup;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		577507A42C87280600051AD4 /* Build configuration list for PBXProject "skyup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577507CB2C87280700051AD4 /* Debug */,
+				577507CC2C87280700051AD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577507CD2C87280700051AD4 /* Build configuration list for PBXNativeTarget "skyup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577507CE2C87280700051AD4 /* Debug */,
+				577507CF2C87280700051AD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577507D02C87280700051AD4 /* Build configuration list for PBXNativeTarget "skyupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577507D12C87280700051AD4 /* Debug */,
+				577507D22C87280700051AD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		577507D32C87280700051AD4 /* Build configuration list for PBXNativeTarget "skyupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577507D42C87280700051AD4 /* Debug */,
+				577507D52C87280700051AD4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 577507A12C87280600051AD4 /* Project object */;
+}
