@@ -212,21 +212,27 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("SKYTRAXX")
+            Text("SKYTRAXX").font(Font.custom("Ethnocentric", size: 35)).padding(.bottom, 30)
             if progress.essentialsDownload > 0 {
-                ProgressBar(progress: progress.essentialsDownload, label: "Downloading essential files...")
+                ProgressBar(progress: progress.essentialsDownload, label: "Downloading essential files...").padding(.bottom, 20)
             }
             if progress.systemDownload > 0 {
-                ProgressBar(progress: progress.systemDownload, label: "Downloading system files...")
+                ProgressBar(progress: progress.systemDownload, label: "Downloading system files...").padding(.bottom, 20)
             }
-            Button(action: {
-                showingVolumePicker = true
-            }) {
-                Text(
-                    "Update"
-                )
+            Spacer()
+            if skytraxxUrl == nil {
+                Button(action: {
+                    showingVolumePicker = true
+                }) {
+                    Text(
+                        "Select SKYTRAXX"
+                    ).font(Font.system(size: 20))
+                }
             }
-        }.padding()
+
+        }
+        
+        .padding(20)
         .sheet(isPresented: $showingVolumePicker) {
             VolumePicker(skytraxxUrl: $skytraxxUrl, error: $volumeError)
         }.onChange(of: skytraxxUrl) {
@@ -277,3 +283,6 @@ struct ProgressBar: View {
 
 
 
+#Preview {
+    ContentView()
+}

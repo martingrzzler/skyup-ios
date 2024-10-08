@@ -14,7 +14,7 @@
 		577507BE2C87280700051AD4 /* skyupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507BD2C87280700051AD4 /* skyupTests.swift */; };
 		577507C82C87280700051AD4 /* skyupUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507C72C87280700051AD4 /* skyupUITests.swift */; };
 		577507CA2C87280700051AD4 /* skyupUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577507C92C87280700051AD4 /* skyupUITestsLaunchTests.swift */; };
-		57CDFBDF2CB585E1009438C9 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57CDFBDE2CB585E1009438C9 /* font.ttf */; };
+		57CDFBE82CB58AFA009438C9 /* font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57CDFBE72CB58AFA009438C9 /* font.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,7 @@
 		577507C32C87280700051AD4 /* skyupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = skyupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		577507C72C87280700051AD4 /* skyupUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyupUITests.swift; sourceTree = "<group>"; };
 		577507C92C87280700051AD4 /* skyupUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skyupUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		57CDFBDE2CB585E1009438C9 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = font.ttf; path = ../../../../../../AndroidStudioProjects/Skyup/app/src/main/res/font/font.ttf; sourceTree = "<group>"; };
-		57CDFBE02CB5862B009438C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		57CDFBE22CB58787009438C9 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
+		57CDFBE72CB58AFA009438C9 /* font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = font.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				57CDFBE12CB5877B009438C9 /* fonts */,
-				57CDFBE02CB5862B009438C9 /* Info.plist */,
-				57CDFBDE2CB585E1009438C9 /* font.ttf */,
 				577507AC2C87280600051AD4 /* skyupApp.swift */,
 				577507AE2C87280600051AD4 /* ContentView.swift */,
 				577507B02C87280700051AD4 /* Assets.xcassets */,
@@ -137,7 +133,7 @@
 		57CDFBE12CB5877B009438C9 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				57CDFBE22CB58787009438C9 /* font.ttf */,
+				57CDFBE72CB58AFA009438C9 /* font.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -248,7 +244,7 @@
 			files = (
 				577507B42C87280700051AD4 /* Preview Assets.xcassets in Resources */,
 				577507B12C87280700051AD4 /* Assets.xcassets in Resources */,
-				57CDFBDF2CB585E1009438C9 /* font.ttf in Resources */,
+				57CDFBE82CB58AFA009438C9 /* font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
