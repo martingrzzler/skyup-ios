@@ -1,0 +1,755 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06E621BC8BC8188B07DCEA7D018759CB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		1519E98457A861546ADAB54A4C9EBD32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		151B32B246A1FFBBF3BA18BEE6F27A30 /* Pods-Skyup-SkyupUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC25D895D1A2550C14D782C9810D090 /* Pods-Skyup-SkyupUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B4B7B658B7BC31CE1474048A6BBA45F /* Pods-Skyup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C4C3A4C9970CD6B9CE64413867C28A6A /* Pods-Skyup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D7B862D6334E5FABBC0EC4B409D1ACB /* Pods-Skyup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ED339D511196731B6ABE325EABD74BBF /* Pods-Skyup-dummy.m */; };
+		6F49DE02D5665E08053D9E0148E11CE6 /* Pods-Skyup-SkyupUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6AA718E3E194B542C7730F28BF1E2 /* Pods-Skyup-SkyupUITests-dummy.m */; };
+		8E57EF6688CA281F7A45F3F6C13B4BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9558D3B9156E1A3F1D3CD90DA679B266 /* Pods-SkyupTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C10007EA056BB6B1C33078A5F1EF35 /* Pods-SkyupTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA72B25D68CD4202B35328CD2E5362BF /* Pods-SkyupTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D88D0827B30CA1752D19F081C75F328B /* Pods-SkyupTests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF5CD49FAEE8EE981C06C90E8CA2A805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F33C612FA658DD541FD560B8F079028A;
+			remoteInfo = "Pods-Skyup";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B84B945AF6A353722FDD5C08271DB4D /* Pods-SkyupTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-SkyupTests"; path = Pods_SkyupTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10794CC165C799F7571B681E4ED2A98C /* Pods-Skyup-SkyupUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Skyup-SkyupUITests-Info.plist"; sourceTree = "<group>"; };
+		1AADB1B648F2D7F12482A2B3FFB8476A /* Pods-SkyupTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SkyupTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		41C8CC7064AE2C0805489A5B07BD5359 /* Pods-SkyupTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SkyupTests.modulemap"; sourceTree = "<group>"; };
+		42170D3EB56749021EBB81151E06EEE1 /* Pods-Skyup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Skyup.modulemap"; sourceTree = "<group>"; };
+		4357C3CF4BEF64AF24E97C560224A657 /* Pods-Skyup-SkyupUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Skyup-SkyupUITests"; path = Pods_Skyup_SkyupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44A087C4B459CC9BEE3F6EC571470852 /* Pods-Skyup-SkyupUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Skyup-SkyupUITests.modulemap"; sourceTree = "<group>"; };
+		48AEA32427E34A145F1C7D7B129E72CD /* Pods-Skyup.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Skyup.debug.xcconfig"; sourceTree = "<group>"; };
+		4FF813636D88B2A58675FB9ED2248C63 /* Pods-Skyup-SkyupUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Skyup-SkyupUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		50B6AA718E3E194B542C7730F28BF1E2 /* Pods-Skyup-SkyupUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Skyup-SkyupUITests-dummy.m"; sourceTree = "<group>"; };
+		58417812D6D2698E1A8DDBB5B8EDD1CC /* Pods-Skyup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Skyup.release.xcconfig"; sourceTree = "<group>"; };
+		627FD8BAD2602C21780946FCE849AF58 /* Pods-Skyup-SkyupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Skyup-SkyupUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6F0D13452FB34B071D3754802D04A0B6 /* Pods-Skyup-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Skyup-acknowledgements.markdown"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		87DE26F56DFA2DBC4D2C011A030E24E1 /* Pods-SkyupTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SkyupTests-Info.plist"; sourceTree = "<group>"; };
+		8F9F3DBD4CA38C72EB8B7AAA8C357C8F /* Pods-Skyup-SkyupUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Skyup-SkyupUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93FA475C7F9D2F1740EF816224F2AAB8 /* Pods-Skyup */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Skyup"; path = Pods_Skyup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B9A7824D8C12377ED1C5D759826DBB6 /* Pods-Skyup-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Skyup-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A3C10007EA056BB6B1C33078A5F1EF35 /* Pods-SkyupTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SkyupTests-umbrella.h"; sourceTree = "<group>"; };
+		A6D28FC630F3F6FBCAEE7D496B4319F8 /* Pods-SkyupTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SkyupTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C4C3A4C9970CD6B9CE64413867C28A6A /* Pods-Skyup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Skyup-umbrella.h"; sourceTree = "<group>"; };
+		D88D0827B30CA1752D19F081C75F328B /* Pods-SkyupTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SkyupTests-dummy.m"; sourceTree = "<group>"; };
+		DED3709AAE88885204C3BDD45A18E11A /* Pods-SkyupTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkyupTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEE21C3BE9D58EDE23AC035D734BA9EC /* Pods-Skyup-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Skyup-acknowledgements.plist"; sourceTree = "<group>"; };
+		E95CBC5B759E2AFA20BC8CFEF8E7F27A /* Pods-Skyup-SkyupUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Skyup-SkyupUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		ECC25D895D1A2550C14D782C9810D090 /* Pods-Skyup-SkyupUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Skyup-SkyupUITests-umbrella.h"; sourceTree = "<group>"; };
+		ED339D511196731B6ABE325EABD74BBF /* Pods-Skyup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Skyup-dummy.m"; sourceTree = "<group>"; };
+		F0296718B768B191C6D39C56BD9982AC /* Pods-SkyupTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkyupTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		02598DAB9218C176EA49A4C1574BACCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06E621BC8BC8188B07DCEA7D018759CB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EFFCB21422B5477455AC7CBF027F8AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E57EF6688CA281F7A45F3F6C13B4BCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7227BF988CE9BF34E205AEFA330C7EAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1519E98457A861546ADAB54A4C9EBD32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5F23223C7622384E415BF7A6E2FCE6D6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F14CBE33CBDD2FEE4E35FFD9926B4FBE /* Pods-Skyup */,
+				CBC4CC259E1449C7E611CCE335544797 /* Pods-Skyup-SkyupUITests */,
+				70672061ED5F2A495AE28938C6F71B94 /* Pods-SkyupTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		70672061ED5F2A495AE28938C6F71B94 /* Pods-SkyupTests */ = {
+			isa = PBXGroup;
+			children = (
+				41C8CC7064AE2C0805489A5B07BD5359 /* Pods-SkyupTests.modulemap */,
+				1AADB1B648F2D7F12482A2B3FFB8476A /* Pods-SkyupTests-acknowledgements.markdown */,
+				A6D28FC630F3F6FBCAEE7D496B4319F8 /* Pods-SkyupTests-acknowledgements.plist */,
+				D88D0827B30CA1752D19F081C75F328B /* Pods-SkyupTests-dummy.m */,
+				87DE26F56DFA2DBC4D2C011A030E24E1 /* Pods-SkyupTests-Info.plist */,
+				A3C10007EA056BB6B1C33078A5F1EF35 /* Pods-SkyupTests-umbrella.h */,
+				DED3709AAE88885204C3BDD45A18E11A /* Pods-SkyupTests.debug.xcconfig */,
+				F0296718B768B191C6D39C56BD9982AC /* Pods-SkyupTests.release.xcconfig */,
+			);
+			name = "Pods-SkyupTests";
+			path = "Target Support Files/Pods-SkyupTests";
+			sourceTree = "<group>";
+		};
+		CBC4CC259E1449C7E611CCE335544797 /* Pods-Skyup-SkyupUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44A087C4B459CC9BEE3F6EC571470852 /* Pods-Skyup-SkyupUITests.modulemap */,
+				8F9F3DBD4CA38C72EB8B7AAA8C357C8F /* Pods-Skyup-SkyupUITests-acknowledgements.markdown */,
+				E95CBC5B759E2AFA20BC8CFEF8E7F27A /* Pods-Skyup-SkyupUITests-acknowledgements.plist */,
+				50B6AA718E3E194B542C7730F28BF1E2 /* Pods-Skyup-SkyupUITests-dummy.m */,
+				10794CC165C799F7571B681E4ED2A98C /* Pods-Skyup-SkyupUITests-Info.plist */,
+				ECC25D895D1A2550C14D782C9810D090 /* Pods-Skyup-SkyupUITests-umbrella.h */,
+				4FF813636D88B2A58675FB9ED2248C63 /* Pods-Skyup-SkyupUITests.debug.xcconfig */,
+				627FD8BAD2602C21780946FCE849AF58 /* Pods-Skyup-SkyupUITests.release.xcconfig */,
+			);
+			name = "Pods-Skyup-SkyupUITests";
+			path = "Target Support Files/Pods-Skyup-SkyupUITests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F5DCA3DCA18B754F43FF991979907773 /* Products */,
+				5F23223C7622384E415BF7A6E2FCE6D6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F14CBE33CBDD2FEE4E35FFD9926B4FBE /* Pods-Skyup */ = {
+			isa = PBXGroup;
+			children = (
+				42170D3EB56749021EBB81151E06EEE1 /* Pods-Skyup.modulemap */,
+				6F0D13452FB34B071D3754802D04A0B6 /* Pods-Skyup-acknowledgements.markdown */,
+				DEE21C3BE9D58EDE23AC035D734BA9EC /* Pods-Skyup-acknowledgements.plist */,
+				ED339D511196731B6ABE325EABD74BBF /* Pods-Skyup-dummy.m */,
+				9B9A7824D8C12377ED1C5D759826DBB6 /* Pods-Skyup-Info.plist */,
+				C4C3A4C9970CD6B9CE64413867C28A6A /* Pods-Skyup-umbrella.h */,
+				48AEA32427E34A145F1C7D7B129E72CD /* Pods-Skyup.debug.xcconfig */,
+				58417812D6D2698E1A8DDBB5B8EDD1CC /* Pods-Skyup.release.xcconfig */,
+			);
+			name = "Pods-Skyup";
+			path = "Target Support Files/Pods-Skyup";
+			sourceTree = "<group>";
+		};
+		F5DCA3DCA18B754F43FF991979907773 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				93FA475C7F9D2F1740EF816224F2AAB8 /* Pods-Skyup */,
+				4357C3CF4BEF64AF24E97C560224A657 /* Pods-Skyup-SkyupUITests */,
+				0B84B945AF6A353722FDD5C08271DB4D /* Pods-SkyupTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		12EA01B197D0296ACADBCF8E225F62C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B4B7B658B7BC31CE1474048A6BBA45F /* Pods-Skyup-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F313ECA3495CD009FFF8E3EF0584EDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				151B32B246A1FFBBF3BA18BEE6F27A30 /* Pods-Skyup-SkyupUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8D9548168D284C15853B36D63994C30 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9558D3B9156E1A3F1D3CD90DA679B266 /* Pods-SkyupTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB7FB9A39B96D64B75C7F217D6020E31 /* Pods-SkyupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D14E0A4834039E271C4CE13F0549293 /* Build configuration list for PBXNativeTarget "Pods-SkyupTests" */;
+			buildPhases = (
+				B8D9548168D284C15853B36D63994C30 /* Headers */,
+				A01B8EC9E0A12907750C96AE95911E2D /* Sources */,
+				4EFFCB21422B5477455AC7CBF027F8AA /* Frameworks */,
+				055FE701843172DBE4541A68F0360F3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80495975C6398FDABB2BF65BD1DBB86A /* PBXTargetDependency */,
+			);
+			name = "Pods-SkyupTests";
+			productName = Pods_SkyupTests;
+			productReference = 0B84B945AF6A353722FDD5C08271DB4D /* Pods-SkyupTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		F33C612FA658DD541FD560B8F079028A /* Pods-Skyup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C059A7983D9F124AC3950EBEF98470F /* Build configuration list for PBXNativeTarget "Pods-Skyup" */;
+			buildPhases = (
+				12EA01B197D0296ACADBCF8E225F62C9 /* Headers */,
+				2C6105C0BC752E53CDF043ACBF77E088 /* Sources */,
+				02598DAB9218C176EA49A4C1574BACCC /* Frameworks */,
+				E50752592EA0FB60962F00B25E19C64C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Skyup";
+			productName = Pods_Skyup;
+			productReference = 93FA475C7F9D2F1740EF816224F2AAB8 /* Pods-Skyup */;
+			productType = "com.apple.product-type.framework";
+		};
+		F40DEEF7D3092930D2105C00E15BA102 /* Pods-Skyup-SkyupUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7B83A7D6C19658B65AED0D51A9E12DE /* Build configuration list for PBXNativeTarget "Pods-Skyup-SkyupUITests" */;
+			buildPhases = (
+				5F313ECA3495CD009FFF8E3EF0584EDC /* Headers */,
+				5A5CEEB7A06B625C322203112C31A723 /* Sources */,
+				7227BF988CE9BF34E205AEFA330C7EAC /* Frameworks */,
+				BAFFACC488F670BC9049A5F0A4E7EF71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Skyup-SkyupUITests";
+			productName = Pods_Skyup_SkyupUITests;
+			productReference = 4357C3CF4BEF64AF24E97C560224A657 /* Pods-Skyup-SkyupUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F5DCA3DCA18B754F43FF991979907773 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F33C612FA658DD541FD560B8F079028A /* Pods-Skyup */,
+				F40DEEF7D3092930D2105C00E15BA102 /* Pods-Skyup-SkyupUITests */,
+				EB7FB9A39B96D64B75C7F217D6020E31 /* Pods-SkyupTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		055FE701843172DBE4541A68F0360F3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAFFACC488F670BC9049A5F0A4E7EF71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E50752592EA0FB60962F00B25E19C64C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C6105C0BC752E53CDF043ACBF77E088 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D7B862D6334E5FABBC0EC4B409D1ACB /* Pods-Skyup-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5A5CEEB7A06B625C322203112C31A723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F49DE02D5665E08053D9E0148E11CE6 /* Pods-Skyup-SkyupUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A01B8EC9E0A12907750C96AE95911E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA72B25D68CD4202B35328CD2E5362BF /* Pods-SkyupTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80495975C6398FDABB2BF65BD1DBB86A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Skyup";
+			target = F33C612FA658DD541FD560B8F079028A /* Pods-Skyup */;
+			targetProxy = BF5CD49FAEE8EE981C06C90E8CA2A805 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		032504F201C69275441D32C68CCD1F0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		156D392592569F8CBCB6C5821F38EEB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58417812D6D2698E1A8DDBB5B8EDD1CC /* Pods-Skyup.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Skyup/Pods-Skyup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Skyup/Pods-Skyup.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1D2666D7472E4ED898D88083D9DCF391 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 627FD8BAD2602C21780946FCE849AF58 /* Pods-Skyup-SkyupUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Skyup-SkyupUITests/Pods-Skyup-SkyupUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Skyup-SkyupUITests/Pods-Skyup-SkyupUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		50055F5E4168F8A7572EB00D1E3F6DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0296718B768B191C6D39C56BD9982AC /* Pods-SkyupTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SkyupTests/Pods-SkyupTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkyupTests/Pods-SkyupTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		575DB220DCF2D3D70F7437EE94686AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF813636D88B2A58675FB9ED2248C63 /* Pods-Skyup-SkyupUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Skyup-SkyupUITests/Pods-Skyup-SkyupUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Skyup-SkyupUITests/Pods-Skyup-SkyupUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F915408A4C19039301B4902F325C768 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DED3709AAE88885204C3BDD45A18E11A /* Pods-SkyupTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SkyupTests/Pods-SkyupTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkyupTests/Pods-SkyupTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CD0D32C67A6D17983D5E6C0E4436666C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48AEA32427E34A145F1C7D7B129E72CD /* Pods-Skyup.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Skyup/Pods-Skyup-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Skyup/Pods-Skyup.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48F67AB1E5DBE79CCF2F86C75296AB01 /* Debug */,
+				032504F201C69275441D32C68CCD1F0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D14E0A4834039E271C4CE13F0549293 /* Build configuration list for PBXNativeTarget "Pods-SkyupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F915408A4C19039301B4902F325C768 /* Debug */,
+				50055F5E4168F8A7572EB00D1E3F6DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C059A7983D9F124AC3950EBEF98470F /* Build configuration list for PBXNativeTarget "Pods-Skyup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD0D32C67A6D17983D5E6C0E4436666C /* Debug */,
+				156D392592569F8CBCB6C5821F38EEB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D7B83A7D6C19658B65AED0D51A9E12DE /* Build configuration list for PBXNativeTarget "Pods-Skyup-SkyupUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				575DB220DCF2D3D70F7437EE94686AF6 /* Debug */,
+				1D2666D7472E4ED898D88083D9DCF391 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
