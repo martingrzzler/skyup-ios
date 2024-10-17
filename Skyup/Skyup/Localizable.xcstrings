@@ -1,0 +1,107 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "%lld%%" : {
+
+    },
+    "Error" : {
+
+    },
+    "Failed to access SKYTRAXX" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fehler beim Zugreifen auf SKYTRAXX"
+          }
+        }
+      }
+    },
+    "homeNote" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stellen Sie sicher, dass Sie Ihr Skytraxx Mini über den USB-C-Anschluss an Ihrem Telefon anschließen, bevor Sie starten."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure to insert your Skytraxx Mini via the USB-C Port on your phone before starting."
+          }
+        }
+      }
+    },
+    "Ok" : {
+
+    },
+    "Oops.. an unexpected error occured" : {
+
+    },
+    "Select SKYTRAXX" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SKYTRAXX auswählen"
+          }
+        }
+      }
+    },
+    "SKYTRAXX" : {
+
+    },
+    "SKYTRAXX could not be found" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SKYTRAXX konnte nicht gefunden werden"
+          }
+        }
+      }
+    },
+    "The SKYTRAXX Device is not the 5 Mini" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das SKYTRAXX ist nicht der 5 Mini"
+          }
+        }
+      }
+    },
+    "The Update was successful. You can close the application now." : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Das Update war erfolgreich. Sie können die Anwendung jetzt schließen."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Update was successful. You can close the application now."
+          }
+        }
+      }
+    },
+    "You selected the wrong folder. Please select SKYTRAXX" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Du hast den falschen Ordner ausgewählt. Bitte wähle SKYTRAXX aus."
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

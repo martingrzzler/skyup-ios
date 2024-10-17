@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		572FC6DD2CC1262B00C52401 /* VolumePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572FC6DC2CC1262B00C52401 /* VolumePicker.swift */; };
+		572FC6DF2CC126DF00C52401 /* DownloadHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572FC6DE2CC126DF00C52401 /* DownloadHandler.swift */; };
+		572FC6E12CC1271D00C52401 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572FC6E02CC1271D00C52401 /* Progress.swift */; };
+		572FC6E42CC12A3E00C52401 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 572FC6E32CC12A3E00C52401 /* Localizable.xcstrings */; };
 		57CCC1292CB965230089E8B3 /* Tarscape in Frameworks */ = {isa = PBXBuildFile; productRef = 57CCC1282CB965230089E8B3 /* Tarscape */; };
 		57CDFC092CB5C99B009438C9 /* SkyupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDFC082CB5C99B009438C9 /* SkyupApp.swift */; };
 		57CDFC0B2CB5C99B009438C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDFC0A2CB5C99B009438C9 /* ContentView.swift */; };
@@ -43,6 +47,10 @@
 		38014E582191C9E28FA3C2A6 /* Pods-Skyup-SkyupUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyup-SkyupUITests.release.xcconfig"; path = "Target Support Files/Pods-Skyup-SkyupUITests/Pods-Skyup-SkyupUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3D89F7A4A5D54D24D394B133 /* Pods-Skyup.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skyup.release.xcconfig"; path = "Target Support Files/Pods-Skyup/Pods-Skyup.release.xcconfig"; sourceTree = "<group>"; };
 		4C0EC678BC7E308B372CB2B6 /* Pods_Skyup_SkyupUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skyup_SkyupUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		572FC6DC2CC1262B00C52401 /* VolumePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumePicker.swift; sourceTree = "<group>"; };
+		572FC6DE2CC126DF00C52401 /* DownloadHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHandler.swift; sourceTree = "<group>"; };
+		572FC6E02CC1271D00C52401 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
+		572FC6E32CC12A3E00C52401 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		57CDFC052CB5C99B009438C9 /* Skyup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CDFC082CB5C99B009438C9 /* SkyupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyupApp.swift; sourceTree = "<group>"; };
 		57CDFC0A2CB5C99B009438C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -124,6 +132,10 @@
 				57CDFC0A2CB5C99B009438C9 /* ContentView.swift */,
 				57CDFC0C2CB5C99C009438C9 /* Assets.xcassets */,
 				57CDFC0E2CB5C99C009438C9 /* Preview Content */,
+				572FC6DC2CC1262B00C52401 /* VolumePicker.swift */,
+				572FC6DE2CC126DF00C52401 /* DownloadHandler.swift */,
+				572FC6E02CC1271D00C52401 /* Progress.swift */,
+				572FC6E32CC12A3E00C52401 /* Localizable.xcstrings */,
 			);
 			path = Skyup;
 			sourceTree = "<group>";
@@ -277,6 +289,7 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 57CDFBFC2CB5C99B009438C9;
 			packageReferences = (
@@ -300,6 +313,7 @@
 			files = (
 				57CDFC102CB5C99C009438C9 /* Preview Assets.xcassets in Resources */,
 				57CDFC0D2CB5C99C009438C9 /* Assets.xcassets in Resources */,
+				572FC6E42CC12A3E00C52401 /* Localizable.xcstrings in Resources */,
 				57CDFC342CB5C9FF009438C9 /* font.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -395,7 +409,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57CDFC0B2CB5C99B009438C9 /* ContentView.swift in Sources */,
+				572FC6E12CC1271D00C52401 /* Progress.swift in Sources */,
 				57CDFC092CB5C99B009438C9 /* SkyupApp.swift in Sources */,
+				572FC6DF2CC126DF00C52401 /* DownloadHandler.swift in Sources */,
+				572FC6DD2CC1262B00C52401 /* VolumePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
