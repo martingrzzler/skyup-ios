@@ -194,7 +194,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text("SKYTRAXX").font(Font.custom("Ethnocentric", size: 35)).padding(.bottom, 30)
+            Text("SKYTRAXX" + (deviceType != nil ? " " + deviceType! : "")).font(Font.custom("Ethnocentric", size: 35)).padding(.bottom, 30)
             if skytraxxUrl == nil {
                 Text("homeNote")
             }
@@ -297,5 +297,6 @@ func urlsByDeviceType(deviceType: String) -> (essentialsUrl: String, systemUrl: 
         return ("https://www.skytraxx.org/skytraxx5/skytraxx5-essentials.tar", "https://www.skytraxx.org/skytraxx5/skytraxx5-system.tar")
     default:
         assert(false, "default case for deviceType hit")
+        return ("", "")
     }
 }
