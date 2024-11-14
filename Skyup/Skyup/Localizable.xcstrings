@@ -34,13 +34,13 @@
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Stellen Sie sicher, dass Sie Ihr Skytraxx Mini über den USB-C-Anschluss an Ihrem Telefon anschließen, bevor Sie starten."
+            "value" : "Stellen Sie sicher, dass Sie Ihr SKYTRAXX Vario über den USB-C-Anschluss an Ihrem Telefon anschließen, bevor Sie starten."
           }
         },
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Make sure to insert your Skytraxx Mini via the USB-C Port on your phone before starting."
+            "value" : "Make sure to insert your SKYTRAXX vario via the USB-C Port on your phone before starting."
           }
         }
       }
@@ -75,12 +75,12 @@
         }
       }
     },
-    "The SKYTRAXX Device is not the 5 Mini" : {
+    "The SKYTRAXX Device is not the 5 Mini or 5" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Das SKYTRAXX ist nicht der 5 Mini"
+            "value" : "Das SKYTRAXX Gerät ist weder das 5 noch das 5Mini"
           }
         }
       }

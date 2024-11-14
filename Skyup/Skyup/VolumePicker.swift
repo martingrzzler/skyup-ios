@@ -11,7 +11,7 @@ enum AccessVolumeError: Error {
     case NotFound
     case WrongVolume
     case AccessDenied
-    case Not5Mini
+    case UnsupportedDevice
     case Unexpected
     
     func userMessage() -> LocalizedStringKey {
@@ -22,8 +22,8 @@ enum AccessVolumeError: Error {
             return "Failed to access SKYTRAXX"
         case .WrongVolume:
             return "You selected the wrong folder. Please select SKYTRAXX"
-        case .Not5Mini:
-            return "The SKYTRAXX Device is not the 5 Mini"
+        case .UnsupportedDevice:
+            return "The SKYTRAXX Device is not the 5 Mini or 5"
         case .Unexpected:
             return "Oops.. an unexpected error occured"
         }
@@ -34,6 +34,7 @@ struct VolumePicker: UIViewControllerRepresentable {
     @Binding var skytraxxUrl: URL?
     @Binding var error: AccessVolumeError?
     @Binding var deviceSoftwareVersion: UInt64?
+    @Binding var deviceType: String?
     
     class Coordinator: NSObject, UIDocumentPickerDelegate {
         var parent: VolumePicker
@@ -67,16 +68,16 @@ struct VolumePicker: UIViewControllerRepresentable {
                 
                 
                 guard let deviceType = dict["hw"] else {
-                    parent.error = .Not5Mini
+                    parent.error = .UnsupportedDevice
                     return
                 }
-                if deviceType != "5mini" {
-                    parent.error = .Not5Mini
+                if deviceType != "5mini" && deviceType != "5" {
+                    parent.error = .UnsupportedDevice
                     return
                 }
                 
                 guard let softwareVersion = dict["sw"] else {
-                    parent.error = .Not5Mini
+                    parent.error = .UnsupportedDevice
                     return
                 }
                 
@@ -85,6 +86,7 @@ struct VolumePicker: UIViewControllerRepresentable {
                 parent.skytraxxUrl = url
                 let softwareVersionNum = softwareVersion.replacingOccurrences(of: "build-", with: "")
                 parent.deviceSoftwareVersion = UInt64(softwareVersionNum)!
+                parent.deviceType = deviceType
             } catch {
                 parent.error = .Unexpected
             }

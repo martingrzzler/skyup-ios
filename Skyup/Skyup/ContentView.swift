@@ -8,9 +8,6 @@
 import SwiftUI
 import Tarscape
 
-let ESSENTIALS_URL = "https://www.skytraxx.org/skytraxx5mini/skytraxx5mini-essentials.tar"
-let SYSTEM_URL = "https://www.skytraxx.org/skytraxx5mini/skytraxx5mini-system.tar"
-
 enum ExtractError: Error {
     case Unexpected
 }
@@ -52,6 +49,7 @@ struct ContentView: View {
     @State private var volumeError: AccessVolumeError?
     @State private var skytraxxUrl: URL?
     @State private var softwareVersion: UInt64?
+    @State private var deviceType: String?
     @State private var progress = Progress()
     @State private var genericErr: Error?
     
@@ -62,11 +60,13 @@ struct ContentView: View {
                 return
             }
             let delegate = DownloadHandler(continuation: continuation) { newValue in
-                if url == ESSENTIALS_URL {
+                assert(deviceType != nil)
+                let urls = urlsByDeviceType(deviceType: deviceType!)
+                if url == urls.essentialsUrl {
                     await MainActor.run {
                         progress.essentialsDownload = newValue
                     }
-                } else if url == SYSTEM_URL {
+                } else if url == urls.systemUrl {
                     await MainActor.run {
                         progress.systemDownload = newValue
                     }
@@ -118,10 +118,12 @@ struct ContentView: View {
                 let progressValue = Float(processedFiles) / Float(objCount)
                 let currentFile = relativePath
                 await MainActor.run {
-                    if (url == ESSENTIALS_URL) {
+                    assert(deviceType != nil)
+                    let urls = urlsByDeviceType(deviceType: deviceType!)
+                    if (url == urls.essentialsUrl) {
                         progress.essentialsInstall = progressValue
                         progress.essentialsCurrentFile = currentFile
-                    } else if (url == SYSTEM_URL) {
+                    } else if (url == urls.systemUrl) {
                         progress.systemInstall = progressValue
                         progress.systemCurrentFile = currentFile
                     }
@@ -233,17 +235,20 @@ struct ContentView: View {
         
         .padding(20)
         .sheet(isPresented: $showingVolumePicker) {
-            VolumePicker(skytraxxUrl: $skytraxxUrl, error: $volumeError, deviceSoftwareVersion: $softwareVersion)
+            VolumePicker(skytraxxUrl: $skytraxxUrl, error: $volumeError, deviceSoftwareVersion: $softwareVersion, deviceType: $deviceType)
         }.onChange(of: skytraxxUrl) {
             if (skytraxxUrl == nil) {
                 return
             }
+            assert(deviceType != nil, "deviceType was not assigned")
+            let urls = urlsByDeviceType(deviceType: deviceType!)
+            
             Task {
                 do {
-                    async let essentials = downloadArchive(url: ESSENTIALS_URL)
-                    async let system = downloadArchive(url: SYSTEM_URL)
-                    try await extractArchive(url: ESSENTIALS_URL, archive: try await essentials)
-                    try await extractArchive(url: SYSTEM_URL, archive: try await system)
+                    async let essentials = downloadArchive(url: urls.essentialsUrl)
+                    async let system = downloadArchive(url: urls.systemUrl)
+                    try await extractArchive(url: urls.essentialsUrl, archive: try await essentials)
+                    try await extractArchive(url: urls.systemUrl, archive: try await system)
                     
                     skytraxxUrl?.stopAccessingSecurityScopedResource()
                 } catch {
@@ -282,4 +287,15 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+func urlsByDeviceType(deviceType: String) -> (essentialsUrl: String, systemUrl: String) {
+    switch (deviceType) {
+    case "5mini":
+        return ("https://www.skytraxx.org/skytraxx5mini/skytraxx5mini-essentials.tar", "https://www.skytraxx.org/skytraxx5mini/skytraxx5mini-system.tar")
+    case "5":
+        return ("https://www.skytraxx.org/skytraxx5/skytraxx5-essentials.tar", "https://www.skytraxx.org/skytraxx5/skytraxx5-system.tar")
+    default:
+        assert(false, "default case for deviceType hit")
+    }
 }
