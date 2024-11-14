@@ -22,6 +22,31 @@ func getRelativeSkytraxxPath(url: URL, extractedArchiveDirName: String) -> Strin
     return String(url.path[range!.upperBound...])
 }
 
+func attemptWrite(buffer: Data, to url: URL, retries: Int = 3) async throws {
+    var attempts = 0
+    var lastError: Error?
+    while attempts < retries {
+        do {
+            try buffer.write(to: url, options: [.atomic])
+            return
+        } catch let error as NSError where error.domain == NSCocoaErrorDomain && error.code == 512 {
+            // Handle weird write error
+            attempts += 1
+            lastError = error
+            print("Retry \(attempts) for file \(url.lastPathComponent) due to stale handle.")
+            // Optional: Delay before retrying
+            try await Task.sleep(nanoseconds: 500_000_000) // 500 ms
+        } catch {
+            print("instead caught other error: \(error)")
+            throw error
+        }
+    }
+    // Throw last error if retries are exhausted
+    if let lastError = lastError {
+        throw lastError
+    }
+}
+
 struct ContentView: View {
     @State private var showingVolumePicker = false
     @State private var volumeError: AccessVolumeError?
@@ -84,6 +109,9 @@ struct ContentView: View {
                 let relativePath = getRelativeSkytraxxPath(url: fileUrl,extractedArchiveDirName: unpackedName)
                 let deviceUrl = skytraxxUrl!.appendingPathComponent(relativePath)
                 print("handling File \(relativePath)")
+                print("on usb device \(deviceUrl)")
+                print("on temp ios \(fileUrl)")
+                print(fileUrl)
                 
                 let isDir = Bool((try? fileUrl.resourceValues(forKeys: [.isDirectoryKey]))?.isDirectory == true)
                 
@@ -99,7 +127,7 @@ struct ContentView: View {
                     }
                 }
                 
-                
+                print("check if dir \(relativePath)")
                 if (isDir) {
                     if !FileManager.default.fileExists(atPath: deviceUrl.path) {
                         try FileManager.default.createDirectory(atPath: deviceUrl.path, withIntermediateDirectories: true)
@@ -107,9 +135,12 @@ struct ContentView: View {
                     continue
                 }
                 
+                print("Attempt read the temp file \(relativePath)")
                 let tempFileBuffer = try Data(contentsOf: fileUrl)
+                print("Read the temp file \(relativePath)")
                 
                 let fileExt = fileUrl.pathExtension
+                print("Got file extension \(fileExt) for \(relativePath)")
                 if fileExt == "oab" || fileExt == "owb" || fileExt == "otb" || fileExt == "oob" {
                     if FileManager.default.fileExists(atPath: deviceUrl.path) {
                         let attrs = try FileManager.default.attributesOfItem(atPath: deviceUrl.path)
@@ -135,8 +166,27 @@ struct ContentView: View {
                             continue
                         }
                     }
+                } else {
+                    if FileManager.default.fileExists(atPath: deviceUrl.path) {
+                        let attrs = try FileManager.default.attributesOfItem(atPath: deviceUrl.path)
+                        let fileSize = attrs[FileAttributeKey.size] as! UInt64
+                        
+                        if fileSize > 0 {
+                            let deviceFileHandle = try FileHandle(forReadingFrom: deviceUrl)
+                            let compareBuffer = try deviceFileHandle.read(upToCount: 512)
+                            
+                            deviceFileHandle.closeFile()
+                            print("Size: \(compareBuffer!.count) for \(relativePath)")
+                            
+                            if tempFileBuffer.subdata(in: 0..<compareBuffer!.count) == compareBuffer {
+                                print("\(relativePath): already on device 512 bytes check")
+                                continue
+                            }
+                        }
+                    }
                 }
-                try tempFileBuffer.write(to: deviceUrl, options: [.atomic])
+                print("Try writing \(relativePath)")
+                try await attemptWrite(buffer: tempFileBuffer, to: deviceUrl,  retries: 10)
             }
     }
     
@@ -169,7 +219,15 @@ struct ContentView: View {
                 }
             }
             if progress.done {
-                Text("The Update was successful. You can close the application now.")
+                VStack {
+                    Text("The Update was successful. You can close the application now.").padding(.bottom, 20)
+                    Button(action: {
+                        exit(0)
+                    }) {
+                        Text("Close")
+                    }
+                }
+                
             }
         }
         

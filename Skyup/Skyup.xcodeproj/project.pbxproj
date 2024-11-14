@@ -51,7 +51,7 @@
 		572FC6DE2CC126DF00C52401 /* DownloadHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadHandler.swift; sourceTree = "<group>"; };
 		572FC6E02CC1271D00C52401 /* Progress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Progress.swift; sourceTree = "<group>"; };
 		572FC6E32CC12A3E00C52401 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		57CDFC052CB5C99B009438C9 /* Skyup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skyup.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57CDFC052CB5C99B009438C9 /* SkyUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CDFC082CB5C99B009438C9 /* SkyupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyupApp.swift; sourceTree = "<group>"; };
 		57CDFC0A2CB5C99B009438C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57CDFC0C2CB5C99C009438C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		57CDFC062CB5C99B009438C9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57CDFC052CB5C99B009438C9 /* Skyup.app */,
+				57CDFC052CB5C99B009438C9 /* SkyUp.app */,
 				57CDFC152CB5C99D009438C9 /* SkyupTests.xctest */,
 				57CDFC1F2CB5C99D009438C9 /* SkyupUITests.xctest */,
 			);
@@ -218,7 +218,7 @@
 				57CCC1282CB965230089E8B3 /* Tarscape */,
 			);
 			productName = Skyup;
-			productReference = 57CDFC052CB5C99B009438C9 /* Skyup.app */;
+			productReference = 57CDFC052CB5C99B009438C9 /* SkyUp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		57CDFC142CB5C99D009438C9 /* SkyupTests */ = {
@@ -590,9 +590,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.Skyup;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SkyUp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -621,9 +621,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = skytraxx.org.Skyup;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SkyUp;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
